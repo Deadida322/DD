@@ -24,3 +24,29 @@ function parallax2(event){
 
 document.addEventListener('scroll', parallax2);
 document.addEventListener('scroll', parallax);
+
+var el = document.getElementById('Arrow');
+function changejc(event){
+    this.querySelectorAll('.galleryContainer').forEach(galleryContainer => {
+        let pos = pageYOffset;
+        galleryContainer.style.width = `${pos/6}%`
+        galleryContainer.style.opacity = `${pos/3}%`
+    });
+    this.querySelectorAll('.Arrow').forEach(Arrow => {
+        
+       Arrow.style.display = `none`
+    });
+    this.querySelectorAll('.gallery2').forEach(gallery2 => {
+        let pos = pageYOffset;
+        gallery2.style.width = `${pos/10}%`
+        gallery2.style.opacity = `${pos/6}%`
+    });
+}
+function changejc2(event){
+    this.querySelectorAll('.desc1').forEach(desc1 => {
+        let pos = pageYOffset;
+        desc1.style.opacity = `${pos/5}%`
+    });
+}
+document.addEventListener('scroll', changejc);
+document.addEventListener('scroll', changejc2);
