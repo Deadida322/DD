@@ -52,5 +52,6 @@ function changejc2(event){
         desc2.style.opacity = `${pos*pos/50}%`
     });
 }
+
 document.addEventListener('scroll', changejc);
 document.addEventListener('scroll', changejc2);
