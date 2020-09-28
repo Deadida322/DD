@@ -29,7 +29,7 @@ var el = document.getElementById('Arrow');
 function changejc(event){
     this.querySelectorAll('.galleryContainer').forEach(galleryContainer => {
         let pos = pageYOffset;
-        galleryContainer.style.width = `${pos/6}%`
+        galleryContainer.style.width = `${pos*pos/5000}%`
         galleryContainer.style.opacity = `${pos/3}%`
     });
     this.querySelectorAll('.Arrow').forEach(Arrow => {
@@ -38,14 +38,18 @@ function changejc(event){
     });
     this.querySelectorAll('.gallery2').forEach(gallery2 => {
         let pos = pageYOffset;
-        gallery2.style.width = `${pos/10}%`
+        gallery2.style.width = `${pos*pos/6000}%`
         gallery2.style.opacity = `${pos/6}%`
     });
 }
 function changejc2(event){
     this.querySelectorAll('.desc1').forEach(desc1 => {
         let pos = pageYOffset;
-        desc1.style.opacity = `${pos/5}%`
+        desc1.style.opacity = `${pos*pos/40}%`
+    });
+    this.querySelectorAll('.desc2').forEach(desc2 => {
+        let pos = pageYOffset;
+        desc2.style.opacity = `${pos*pos/50}%`
     });
 }
 document.addEventListener('scroll', changejc);
