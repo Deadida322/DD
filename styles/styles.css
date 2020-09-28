@@ -10,7 +10,7 @@
     padding: 0;
     
 }
-a { 
+a { z-index: 30; 
     text-decoration: none; 
     color: #c0efff;
    } 
@@ -30,6 +30,7 @@ header{
     min-height: 80%;
     padding-top: 10%;
     width: 69%;
+    background-position:center;
     background-image: url(../images/main1.jpg);
     background-size:cover;
     left: 15.5%;
@@ -40,6 +41,7 @@ header{
 
 h1{
     font-size: 200px;
+    opacity: 0.8;
 }
 h2{
     font-size: 50px;
@@ -50,7 +52,7 @@ h2{
 small{
     padding: -15px;
     font-size:55px;
-
+    opacity: 0.8;
 }
 .headh{
     display: block;
@@ -136,7 +138,7 @@ section{
 .section2{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 93%;
     margin-left: 5%;
 
 }
@@ -247,17 +249,28 @@ span{
     padding-left: 7%;
 
 }
+.ImgSize{
+    width: 90%;
+}
+.pos{
+    position: relative;
+    margin-top: -400px; 
+}
+.pos2{
+    position: relative;
+    margin-top: -200px; 
+}
 .prefooter{
     position: relative;
-    top: -400px;
-    width:100%;
-    z-index: 0;
+    left: 15%;
+    bottom: 100px;
+    width:70%;
     height:600px;
     display: block;
-    background-color: #04232e;
     border-radius: 15px;
     border: 2px solid #13191c;
     background-image: url(../images/pf.png);
+    background-position:center;
     background-size: cover;
 
 }
@@ -268,11 +281,72 @@ footer{
     height: 200px;
     width: 71%;
     left: 14.5%;
-    top: 00px;
+    top: -20px;
     z-index: 1;
     border-radius: 20px 20px 0px 0px;
     border: 3px solid #13191c;
     box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.7);
+}
+.SvgCont{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    margin-top: 30px;
+    height:70%;
+    justify-content: space-around;
+}
+.SvgItem1{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/tw1.svg);
+    background-position:center;
+    background-size: cover;
+    width: 130px;
+    border-radius: 1500px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.7);
+}
+.SvgItem2{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/yt1.svg);
+    background-size: cover;
+    width: 140px;
+    background-position:center;
+}
+.SvgItem3{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/vk1.svg);
+    background-size: cover;
+    width: 140px;;
+    background-position:center;
+}
+.SvgItem4{
+    
+    background-image: url(../images/inst1.svg);
+    background-size: cover;
+    border-radius: 150px;
+    width: 130px;;
+    box-shadow: 0 0.2px 50px 2px rgba(0,0,0,0.7);
+    transition: all ease-in-out 0.5s;
+    background-position:center;
+}
+.SvgItem1:hover{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/tw2.svg);
+    border-radius: 150px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0);
+    
+}
+.SvgItem2:hover{
+    background-image: url(../images/yt2.svg);
+    transition: all ease-in-out 0.5s;
+}
+.SvgItem3:hover{
+    background-image: url(../images/vk2.svg);
+    transition: all ease-in-out 0.5s;
+}
+.SvgItem4:hover{
+    background-image: url(../images/inst2.svg);
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0);
 }
 .AeContainer2{
     display: flex;
@@ -288,35 +362,86 @@ footer{
 }
 @media screen and (max-width: 1600px){
     .about{
-        width: 30%; 
-        margin-top: 10px;
         font-size: 19px;
-        text-align:left;}
+    }
+    .section2{
+        width: 110%;
+        margin-left: 5%;
+    }
+    .ya{
+        top: 10%;
+        width: 74%;
+    }   
 }
 @media screen and (max-width: 1500px){
     .about{
-        width: 30%; 
-        margin-top: 10px;
         font-size: 18px;
-        text-align:left;}
+    }
+    .section2{
+        width: 110%;
+        margin-left: 5%;
+
+    }
+    .ya{
+        width: 70%;
+    }
+    .imgsize{
+        margin-top: 30px;
+    }
+    footer{
+        height: 180px;
+    }
+    
 }
+
 @media screen and (max-width: 1400px){
+    footer{
+        height: 160px;
+    }
+    .imgsize{
+        margin-top: 40px;
+    }
+    .SvgItem2{
+        width: 140px;
+    }
+    .SvgItem3{
+        width: 140px;;
+    }
     .about{
-        width: 30%; 
-        margin-top: 10px;
         font-size: 16px;
-        text-align:left;}
+    }
+    .section2{
+        width: 90%;
+        margin-left: 5%;
+
+    }
+    .ya{
+        width: 70%;
+    }  
+    header{
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10%;
+        min-height:700px;
+    }
 }
 @media screen and (max-width: 1300px){
+    footer{
+        height: 100px;
+    }
+    .imgsize{
+        margin-top: 50px;
+    }
     .ya{
         position: relative;
-        left: 5%;
+        left: 0%;
         border-radius: 15px;
         width: 80%;
         margin-bottom: 40px;
     }   
     .section2{
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
     }
     .about{
@@ -366,9 +491,52 @@ footer{
     a span:hover {
         font-size: 22px;
        }
+    .prefooter{
+        top: 50px;
+        width:70%;
+        height:600px;
+    }
          
 }
 @media screen and (max-width: 1200px){
+    .SvgCont{
+        height:40%;
+    }
+    .SvgItem1{
+        width: 60px;
+    }
+    .SvgItem2{
+        width: 60px;;
+    }
+    .SvgItem3{
+        width: 60px;
+    }
+    .SvgItem4{
+        width: 60px;;
+    }
+    footer{
+        max-height: 120px;
+    }
+    .imgsize{
+        margin-top: 70px;
+    }
+    header{
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10%;
+        min-height:600px;
+    }
+    .pos2{
+        position: relative;
+        margin-top: -400px; 
+    }
+    
+    .prefooter{
+        margin-top: 350px;
+        width:70%;
+        height:400px;
+    }
     .ya{
         position: relative;
         left: 5%;
@@ -377,7 +545,7 @@ footer{
         margin-bottom: 40px;
     }   
     .section2{
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
     }
     .about{
@@ -426,7 +594,7 @@ footer{
     }
     a span:hover {
         font-size: 22px;
-       }
+    }
 }
 @media screen and (max-width: 1600px){
     .about{
