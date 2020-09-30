@@ -41,17 +41,34 @@ function changejc(event){
         gallery2.style.width = `${pos*pos/6000}%`
         gallery2.style.opacity = `${pos/6}%`
     });
+    this.querySelectorAll('.gallery3').forEach(gallery3 => {
+        let pos = pageYOffset;
+        gallery3.style.width = `${pos*pos/8200}%`
+        gallery3.style.opacity = `${pos/9}%`
+    });
+    this.querySelectorAll('.gallery4').forEach(gallery4 => {
+        let pos = pageYOffset;
+        gallery4.style.width = `${pos*0.5*pos/10200}%`
+        gallery4.style.opacity = `${pos/12}%`
+    });
 }
 function changejc2(event){
     this.querySelectorAll('.desc1').forEach(desc1 => {
         let pos = pageYOffset;
-        desc1.style.opacity = `${pos*pos/40}%`
+        desc1.style.opacity = `${pos*pos/2000}%`
     });
     this.querySelectorAll('.desc2').forEach(desc2 => {
         let pos = pageYOffset;
-        desc2.style.opacity = `${pos*pos/50}%`
+        desc2.style.opacity = `${pos*pos/5000}%`
+    });
+    this.querySelectorAll('.desc3').forEach(desc3 => {
+        let pos = pageYOffset;
+        desc3.style.opacity = `${pos*0.7*pos/7000}%`
+    });
+    this.querySelectorAll('.desc4').forEach(desc4 => {
+        let pos = pageYOffset;
+        desc4.style.opacity = `${pos*0.6*pos/9000}%`
     });
 }
-
 document.addEventListener('scroll', changejc);
 document.addEventListener('scroll', changejc2);

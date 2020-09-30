@@ -254,11 +254,11 @@ span{
 }
 .pos{
     position: relative;
-    margin-top: -400px; 
+    margin-top: -600px; 
 }
 .pos2{
     position: relative;
-    margin-top: -200px; 
+    margin-top: -250px; 
 }
 .prefooter{
     position: relative;
@@ -364,14 +364,14 @@ footer{
 
 .galleryContainer{
     display: flex;
-    width: 100%;
-    height: 200px;
+    width: 0%;
+    height: 150px;
     margin-top: 20px;
     justify-content: space-around;
 }
 .gal1{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal1.png);
+    background-image: url(../images/gal1.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -399,7 +399,7 @@ footer{
 }
 .gal2{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal2.png);
+    background-image: url(../images/gal2.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -411,7 +411,7 @@ footer{
 }
 .gal3{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal3.png);
+    background-image: url(../images/gal3.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -423,7 +423,7 @@ footer{
 }
 .gal4{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal4.png);
+    background-image: url(../images/gal4.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -435,7 +435,7 @@ footer{
 }
 .gal5{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal5.png);
+    background-image: url(../images/gal5.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -446,7 +446,7 @@ footer{
 
 }.gal6{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal6.png);
+    background-image: url(../images/gal6.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -457,7 +457,7 @@ footer{
 
 }.gal7{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal7.png);
+    background-image: url(../images/gal7.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -470,7 +470,103 @@ footer{
 
 .gal8{
     transition: all ease-in-out 0.5s;
-    background-image: url(../images/gal8.png);
+    background-image: url(../images/gal8.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal9{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal9.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal10{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/about1.jpg);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal11{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal11.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal12{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal12.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal13{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal13.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal14{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal14.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal15{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal15.webp);
+    background-position:center;
+    background-size: cover;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
+    border: 3px solid #13191c;
+
+}
+.gal16{
+    transition: all ease-in-out 0.5s;
+    background-image: url(../images/gal16.webp);
     background-position:center;
     background-size: cover;
     width: 40%;
@@ -483,8 +579,8 @@ footer{
 .descriptionContainer{
     display: flex;
     width: 100%;
-    height: 200px;
-    margin-top: 20px;
+    height: 170px;
+    margin-top: 55px;
     justify-content: space-around;
 }
 .desc1{
