@@ -6,7 +6,6 @@
     <title>Фото</title>
 
     <link rel="stylesheet" href="styles/styles2.css" type="text/css">
-    
 </head>
 <body>
     <header speeds ="20" class="layer head">
@@ -48,6 +47,7 @@
             
         </div>
         
+        
         <div class = "section2">
             <div class="descriptionContainer">
                 <div class=" desc1"><h4>Зомби<br></h4> Рисунок:<br> https://vk.com/bublichek_official<br>
@@ -57,6 +57,8 @@
                 <div class="desc1"><h4>Арка<br></h4> Работа сделанная в качестве обложки для трека малоизвестного исполнителя, позже была изменена, так и не выйдя в таком виде</div></div>
         </div>
         <div class=" line"></div>
+       
+            
         <div class = "section2">
             <div class="gallery2 galleryContainer">
                 <div class="gal gal5"></div>
@@ -77,6 +79,11 @@
                 <div class="desc2 desc1"><h4>Две стороны<br></h4> Работа, сделанная для конкурса какой-то непонятной блогерши, я очень хотел косметику</div>
                 <div class="desc2 desc1"><h4>Inside<br></h4> После лекции у каждого из нас в голове вода</div>
                 <div class="desc2 desc1"><h4>Муранья 2.0<br></h4> Да, мураньи любят фоткаться <br><a href="https://www.instagram.com/rvr.lnv/"> <span>Модель: Наталья </a></div></span></div>
+        </div>
+        <div class=" line"></div>
+        <div id="Box">
+            <img src = "images/before.jpg" class="el1">
+            <img src = "images/after.jpg" class="el1">
         </div>
         <div class=" line"></div>
         <div class = "section2">
@@ -134,8 +141,19 @@
             <a href="https://www.instagram.com/deadida32/" class="SvgItem4"></a>
         </div>
     </footer></div>
-<script src="main.js">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+    <script src="main.js">
+    $('#BeforeAfterContainer').twentytwenty()
 </script>
+<script>
+    $('#Box').twentytwenty({
+        before_label:'До магии',
+        after_label:'После магии',
+    });
+    </script>
 </body>
 
 </html>

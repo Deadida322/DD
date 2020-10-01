@@ -254,11 +254,11 @@ span{
 }
 .pos{
     position: relative;
-    margin-top: -600px; 
+    margin-top: -780px; 
 }
 .pos2{
     position: relative;
-    margin-top: -250px; 
+    margin-top: -290px; 
 }
 .prefooter{
     position: relative;
@@ -378,7 +378,7 @@ footer{
     height: 200px;
     border-radius: 15px;
     box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
-
+    border: 3px solid #13191c;
 }
 
 .Arrow{
@@ -407,7 +407,7 @@ footer{
     border-radius: 15px;
     box-shadow: 0 0.2px 100px 2px rgba(0,0,0,0.3);
     border: 3px solid #13191c;
-
+        border: 3px solid #13191c;
 }
 .gal3{
     transition: all ease-in-out 0.5s;
@@ -594,7 +594,23 @@ footer{
     z-index: 300;
     cursor: pointer;
 }
+.descriptionContainer > a:hover{
+    font-size: 6px;
+    color: #25c5ff;
 
+}
+#Box{
+    margin: 30px auto;
+    width: 80%;
+    height: 550px;
+    z-index: 40000000;
+    border-radius: 14px;
+    border: 3px solid #13191c;
+}
+.el1{
+    width: 100%;
+    height: 550px;
+}
 
 @media screen and (max-width: 1600px){
     .about{
@@ -726,6 +742,7 @@ footer{
     }
     a span:hover {
         font-size: 22px;
+        
        }
     .prefooter{
         top: 50px;

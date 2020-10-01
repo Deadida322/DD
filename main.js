@@ -29,7 +29,7 @@ var el = document.getElementById('Arrow');
 function changejc(event){
     this.querySelectorAll('.galleryContainer').forEach(galleryContainer => {
         let pos = pageYOffset;
-        galleryContainer.style.width = `${pos*pos/5000}%`
+        galleryContainer.style.width = `${pos*pos/3500}%`
         galleryContainer.style.opacity = `${pos/3}%`
     });
     this.querySelectorAll('.Arrow').forEach(Arrow => {
@@ -38,17 +38,17 @@ function changejc(event){
     });
     this.querySelectorAll('.gallery2').forEach(gallery2 => {
         let pos = pageYOffset;
-        gallery2.style.width = `${pos*pos/6000}%`
+        gallery2.style.width = `${pos*pos/5000}%`
         gallery2.style.opacity = `${pos/6}%`
     });
     this.querySelectorAll('.gallery3').forEach(gallery3 => {
         let pos = pageYOffset;
-        gallery3.style.width = `${pos*pos/8200}%`
+        gallery3.style.width = `${pos*0.25*pos/8200}%`
         gallery3.style.opacity = `${pos/9}%`
     });
     this.querySelectorAll('.gallery4').forEach(gallery4 => {
         let pos = pageYOffset;
-        gallery4.style.width = `${pos*0.5*pos/10200}%`
+        gallery4.style.width = `${pos*0.22*pos/10200}%`
         gallery4.style.opacity = `${pos/12}%`
     });
 }
@@ -63,12 +63,13 @@ function changejc2(event){
     });
     this.querySelectorAll('.desc3').forEach(desc3 => {
         let pos = pageYOffset;
-        desc3.style.opacity = `${pos*0.7*pos/7000}%`
+        desc3.style.opacity = `${pos*0.4*pos/7000}%`
     });
     this.querySelectorAll('.desc4').forEach(desc4 => {
         let pos = pageYOffset;
-        desc4.style.opacity = `${pos*0.6*pos/9000}%`
+        desc4.style.opacity = `${pos*0.3*pos/9000}%`
     });
 }
 document.addEventListener('scroll', changejc);
 document.addEventListener('scroll', changejc2);
+$('#BeforeAfterContainer').twentytwenty()
