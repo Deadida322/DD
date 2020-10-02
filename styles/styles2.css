@@ -995,6 +995,14 @@ footer{
          
 }
 @media screen and (max-width: 1200px){
+    .pos4{
+        position: relative;
+        margin-top: -850px; 
+    }
+    .pos44{
+        position: relative;
+        margin-top: -480px; 
+    }
     .pos2{
         position: relative;
         margin-bottom: -480px; 
