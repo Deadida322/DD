@@ -41,6 +41,10 @@ function changejc(event){
         gallery2.style.width = `${pos*pos/5000}%`
         gallery2.style.opacity = `${pos/6}%`
     });
+    this.querySelectorAll('.vidgallery').forEach(gallery => {
+        let pos = pageYOffset;
+        gallery.style.opacity = `${pos/6}%`
+    });
     this.querySelectorAll('.gallery3').forEach(gallery3 => {
         let pos = pageYOffset;
         gallery3.style.width = `${pos*0.25*pos/8200}%`
@@ -55,7 +59,7 @@ function changejc(event){
 function changejc2(event){
     this.querySelectorAll('.desc1').forEach(desc1 => {
         let pos = pageYOffset;
-        desc1.style.opacity = `${pos*pos/2000}%`
+        desc1.style.opacity = `${pos*pos/1500}%`
     });
     this.querySelectorAll('.desc2').forEach(desc2 => {
         let pos = pageYOffset;
@@ -73,3 +77,27 @@ function changejc2(event){
 document.addEventListener('scroll', changejc);
 document.addEventListener('scroll', changejc2);
 $('#BeforeAfterContainer').twentytwenty()
+vid = document.getElementById('vid1'); 
+vid2 = document.getElementById('vid2'); 
+vid3 = document.getElementById('vid3'); 
+vid.addEventListener('mousemove', function() {
+  vid.play();
+});
+
+vid.addEventListener('mouseleave', function() {
+  vid.pause();
+});
+vid2.addEventListener('mousemove', function() {
+  vid2.play();
+});
+  
+vid2.addEventListener('mouseleave', function() {
+   vid2.pause();
+});
+vid3.addEventListener('mousemove', function() {
+    vid3.play();
+});
+    
+vid3.addEventListener('mouseleave', function() {
+    vid3.pause();
+});
