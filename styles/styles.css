@@ -867,4 +867,7 @@ footer{
         border-radius: 15px;
         border: 2px solid #13191c;
     }
+    h1{
+        margin-top: 40px;
+    }
 }
