@@ -41,7 +41,54 @@ header{
 .header2{
     background-image: url(../images/after.jpg);
 }
+.header4{
+    background-image: url(../images/head4.jpg);
+}
+.containerofreg{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
 
+form{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+}
+input{
+    margin-left: -20%;
+    border: 2px solid #13191c;
+    border-radius:5px; 
+    background-color: #81d5ff;
+    width: 140%;
+    height: 30px;
+}
+.ie{
+    font-size: 16px;
+    height: 30px;
+}
+.ieB{
+    background-color: #003550;
+    width: 55%;
+    margin-left: 27.5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 35px;
+}
+.posreg{
+    margin-top: -280px;
+}
+.posreg2{
+    margin-top: -170px;
+}
+.regdescription{
+    width: 50%;
+    margin-top: 25px;
+}
 h1{
     font-size: 200px;
     opacity: 0.8;
@@ -76,7 +123,6 @@ small{
     top: 30%;
     justify-content: space-around;
     width: 67%;
-
 }
 
 .citem1{
@@ -283,10 +329,12 @@ span{
     background-image: url(../images/pf2.jpg);
     background-position:center;
     background-size: cover;
-
 }
 .prefooter2{
     background-image: url(../images/pf3.jpg);
+}
+.prefooter3{
+    background-image: url(../images/pf4.jpg);
 }
 footer{
     position: relative;
@@ -819,6 +867,12 @@ footer{
 
 }
 @media screen and (max-width: 1500px){
+    .posreg{
+        margin-top: -380px;
+    }
+    .posreg2{
+        margin-top: -170px;
+    }
     .about{
         font-size: 18px;
     }
@@ -852,14 +906,7 @@ footer{
     }
 }
 @media screen and (max-width: 1400px){
-    .pos4{
-        position: relative;
-        margin-top: -760px; 
-    }
-    .pos44{
-        position: relative;
-        margin-top: -350px; 
-    }
+
     .desc1{
         font-size:14px;
     }
@@ -895,6 +942,12 @@ footer{
     }
 }
 @media screen and (max-width: 1300px){
+    .posreg{
+        margin-top: -420px;
+    }
+    .posreg2{
+        margin-top: -370px;
+    }
     .pos2{
         position: relative;
         margin-top: -230px; 
