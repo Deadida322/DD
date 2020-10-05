@@ -1,5 +1,5 @@
 var browserMinWidth = parseInt($('head').css('min-width'), 10);
-if (document.documentElement.clientWidth > 500){
+if (document.documentElement.clientWidth > 600){
 function parallax(event){
     this.querySelectorAll('.layer').forEach(layer => {
         let speed = layer.getAttribute('speeds');
@@ -104,7 +104,7 @@ vid3.addEventListener('mouseleave', function() {
     vid3.pause();
 });
 }
-if(document.documentElement.clientWidth < 500) {
+if(document.documentElement.clientWidth < 600) {
     function parallax(event){
         this.querySelectorAll('.layer').forEach(layer => {
             let speed = layer.getAttribute('speeds');
