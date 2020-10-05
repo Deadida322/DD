@@ -47,6 +47,7 @@ header{
 h1{
     font-size: 200px;
     opacity: 0.8;
+    margin-top:0;
 }
 h2{
     font-size: 50px;
@@ -869,5 +870,12 @@ footer{
     }
     h1{
         margin-top: 40px;
+    }
+}
+@media screen and (min-width: 2300px)
+{
+    .ImgSize{
+        margin-top:-60px;
+        width: 90%;
     }
 }
