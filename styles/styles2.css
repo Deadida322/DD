@@ -1194,7 +1194,7 @@ footer{
         } 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     .pos{
         margin-bottom: -360px;
     }
