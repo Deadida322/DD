@@ -1433,7 +1433,7 @@ footer{
     }
     .galleryContainer{
         display: flex;
-        width: 100%;
+        width: 00%;
         height: 80px;
         margin-top: 20px;
         justify-content: space-around;
