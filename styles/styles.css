@@ -633,6 +633,13 @@ footer{
         } 
 }
 @media screen and (max-width: 600px){
+    header{
+        background-image: url(../images/main1m.jpg);
+    }
+    .prefooter{
+        background-image: url(../images/pfm.png);
+    }
+
     section{
         position: relative;
         top:-50px;

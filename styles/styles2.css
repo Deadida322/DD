@@ -1194,9 +1194,67 @@ footer{
         } 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
+    .prefooter{
+        background-image: url(../images/pf2m.jpg);
+    }
+    .prefooter2{
+        background-image: url(../images/pf3.jpg);
+    }
+    .prefooter3{
+        background-image: url(../images/pf4m.jpg);
+    }
+    
+    .posreg{
+        margin-top: -200px;
+    }
+    .posreg2{
+        margin-top: -360px;
+    }
+    .regdescription{
+        width: 50%;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    input{
+        margin-left: 0%;
+        border: 2px solid #13191c;
+        border-radius:5px; 
+        background-color: #81d5ff;
+        width: 100%;
+        height: 30px;
+    }
+    form{
+        margin-left: 0%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        height: 400px;
+    }
+    .pos4{
+        margin-top: -470px;
+    }
+    .pos44{
+        margin-top: -420px;
+    }
+    #vid1{
+        transition: all ease-in-out 0.5s;
+        background-position:center;
+        background-size: cover;
+        width: 90%;
+        height: 70%;
+       
+    }
+    .descvid1{
+        margin-top: -10%;
+        width: 80%;
+        height: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
     .pos{
-        margin-bottom: -360px;
+        margin-bottom: -380px;
     }
     .pos2{
         margin-bottom: -420px;
@@ -1433,8 +1491,8 @@ footer{
     }
     .galleryContainer{
         display: flex;
-        width: 00%;
-        height: 80px;
+        width: 0%;
+        height: 100px;
         margin-top: 20px;
         justify-content: space-around;
     }
