@@ -1510,6 +1510,7 @@ footer{
     .desc1{
         font-size: 9px;
         width: 25%;
+        opacity: 0%;
     }
     .descriptionContainer{
         display: flex;
