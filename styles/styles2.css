@@ -873,7 +873,6 @@ footer{
     width: 40%;
     margin-left: 30% ;
     margin-top: 0% ;
-    background-color: #4083ff;
     z-index: 30;
     background-image: ;
     background-position: center;
@@ -888,6 +887,24 @@ footer{
     width:98%;
     margin:1%;
 }
+.krest{
+    position:fixed;
+    background-color: #02c4ff;
+    border-radius: 30px;
+    right: 31%;
+    margin-top: 1% ;
+    z-index: 32;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #02c4ff;
+    opacity: 60%;
+    animation-name: opc2;
+    cursor: pointer;
+    animation-duration: 0.5s;
+    transition: 1s ease-in;
+    display: none;
+}
+
 @keyframes opc{
     0%{
         opacity: 0%;
@@ -895,6 +912,20 @@ footer{
     }
     100%{
         opacity: 100%;
+        transform: scale(1);
+    }
+}
+@keyframes opc2{
+    0%{
+        opacity: 0%;
+        transform: scale(0.);
+    }
+    50%{
+        opacity: 0%;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 60%;
         transform: scale(1);
     }
 }
@@ -1580,6 +1611,12 @@ footer{
         animation-name: opc;
         animation-duration: 0.5s;
         transition: 0.5s ease-in;
+    }
+    .krest{
+        right: 2%;
+        margin-top: 12% ;
+        width: 20px;
+        height: 20px;
     }
  }   
     @media screen and (min-width: 2300px)
