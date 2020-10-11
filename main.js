@@ -2,7 +2,7 @@ var browserMinWidth = parseInt($('head').css('min-width'), 10);
 if (document.documentElement.clientWidth > 600){
     $(".galleryContainer > div").on('click', function(d) {
         curSlide = d.target;
-        
+        $(".krest").css({"display": "block"});
         iPicture = $(curSlide).css("backgroundImage");
         iPicture = iPicture.split("(");
         var iP = iPicture[1];
@@ -16,6 +16,12 @@ if (document.documentElement.clientWidth > 600){
     $(".pelena").on('click', function(d) {
         $(".ShowPhoto").css({"display": "none"});
         $(".pelena").css({"display": "none"});
+        $(".krest").css({"display": "none"});
+    });
+    $(".krest").on('click', function(d) {
+        $(".ShowPhoto").css({"display": "none"});
+        $(".pelena").css({"display": "none"});
+        $(".krest").css({"display": "none"});
 	});
 function parallax(event){
     this.querySelectorAll('.layer').forEach(layer => {
@@ -26,7 +32,7 @@ function parallax(event){
 
     });
 }
-function parallax2(event){ 
+function parallax2(event){
     this.querySelectorAll('.layer1').forEach(layer1 => {
         let speed = layer1.getAttribute('speeds');
         let pos = pageYOffset;
@@ -141,12 +147,19 @@ if(document.documentElement.clientWidth < 600) {
         iP = iP.replace(/"/g, '');
         $(".ShowPhoto").css({"display": "block"});
         $(".pelena").css({"display": "block"});
+        $(".krest").css({"display": "block"});
         $(".ShowPhoto > img").attr({"src": iP});
     });
 
     $(".pelena").on('click', function(d) {
         $(".ShowPhoto").css({"display": "none"});
         $(".pelena").css({"display": "none"});
+        $(".krest").css({"display": "none"});
+    });
+    $(".krest").on('click', function(d) {
+        $(".ShowPhoto").css({"display": "none"});
+        $(".pelena").css({"display": "none"});
+        $(".krest").css({"display": "none"});
 	});
     function parallax2(event){
         this.querySelectorAll('.layer1').forEach(layer1 => {
