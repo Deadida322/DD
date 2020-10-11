@@ -26,7 +26,7 @@ function parallax(event){
 
     });
 }
-function parallax2(event){
+function parallax2(event){ 
     this.querySelectorAll('.layer1').forEach(layer1 => {
         let speed = layer1.getAttribute('speeds');
         let pos = pageYOffset;
