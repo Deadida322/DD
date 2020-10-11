@@ -1,5 +1,22 @@
 var browserMinWidth = parseInt($('head').css('min-width'), 10);
 if (document.documentElement.clientWidth > 600){
+    $(".galleryContainer > div").on('click', function(d) {
+        curSlide = d.target;
+        
+        iPicture = $(curSlide).css("backgroundImage");
+        iPicture = iPicture.split("(");
+        var iP = iPicture[1];
+        iP = iP.replace(')', '');
+        iP = iP.replace(/"/g, '');
+        $(".ShowPhoto").css({"display": "block"});
+        $(".pelena").css({"display": "block"});
+        $(".ShowPhoto > img").attr({"src": iP});
+    });
+
+    $(".pelena").on('click', function(d) {
+        $(".ShowPhoto").css({"display": "none"});
+        $(".pelena").css({"display": "none"});
+	});
 function parallax(event){
     this.querySelectorAll('.layer').forEach(layer => {
         let speed = layer.getAttribute('speeds');
@@ -114,6 +131,23 @@ if(document.documentElement.clientWidth < 600) {
     
         });
     }
+    $(".galleryContainer > div").on('click', function(d) {
+        curSlide = d.target;
+        
+        iPicture = $(curSlide).css("backgroundImage");
+        iPicture = iPicture.split("(");
+        var iP = iPicture[1];
+        iP = iP.replace(')', '');
+        iP = iP.replace(/"/g, '');
+        $(".ShowPhoto").css({"display": "block"});
+        $(".pelena").css({"display": "block"});
+        $(".ShowPhoto > img").attr({"src": iP});
+    });
+
+    $(".pelena").on('click', function(d) {
+        $(".ShowPhoto").css({"display": "none"});
+        $(".pelena").css({"display": "none"});
+	});
     function parallax2(event){
         this.querySelectorAll('.layer1').forEach(layer1 => {
             let speed = layer1.getAttribute('speeds');
