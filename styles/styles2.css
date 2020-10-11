@@ -889,14 +889,14 @@ footer{
 }
 .krest{
     position:fixed;
-    background-color: #02c4ff;
+    background-color: #b8edfd;
     border-radius: 30px;
     right: 31%;
     margin-top: 1% ;
     z-index: 32;
     width: 30px;
     height: 30px;
-    border: 2px solid #02c4ff;
+    border: 2px solid #b8edfd;
     opacity: 60%;
     animation-name: opc2;
     cursor: pointer;
@@ -1602,7 +1602,6 @@ footer{
         width: 100%;
         margin-left: 00% ;
         margin-top: 10% ;
-        background-color: #4083ff;
         z-index: 30;
         background-image: ;
         background-position: center;
