@@ -28,8 +28,6 @@ function parallax(event){
         let speed = layer.getAttribute('speeds');
         let pos = pageYOffset;
         layer.style.transform = `translateY(${pos*speed/-100}px)`
-
-
     });
 }
 function parallax2(event){
@@ -52,52 +50,36 @@ document.addEventListener('scroll', parallax);
 
 var el = document.getElementById('Arrow');
 function changejc(event){
-    this.querySelectorAll('.galleryContainer').forEach(galleryContainer => {
-        let pos = pageYOffset;
-        galleryContainer.style.width = `${pos*pos/3500}%`
-        galleryContainer.style.opacity = `${pos/3}%`
-    });
-    this.querySelectorAll('.Arrow').forEach(Arrow => {
-        
-       Arrow.style.display = `none`
-    });
-    this.querySelectorAll('.gallery2').forEach(gallery2 => {
-        let pos = pageYOffset;
-        gallery2.style.width = `${pos*pos/5000}%`
-        gallery2.style.opacity = `${pos/6}%`
-    });
-    this.querySelectorAll('.vidgallery').forEach(gallery => {
-        let pos = pageYOffset;
-        gallery.style.opacity = `${pos/6}%`
-    });
-    this.querySelectorAll('.gallery3').forEach(gallery3 => {
-        let pos = pageYOffset;
-        gallery3.style.width = `${pos*0.25*pos/8200}%`
-        gallery3.style.opacity = `${pos/9}%`
-    });
-    this.querySelectorAll('.gallery4').forEach(gallery4 => {
-        let pos = pageYOffset;
-        gallery4.style.width = `${pos*0.22*pos/10200}%`
-        gallery4.style.opacity = `${pos/12}%`
-    });
+    let pos = pageYOffset;
+
+    if(pos > 120){
+         $('.gallery1').css({"animationName":"vidcont"});
+    }
+    if(pos > 300){
+        $('.gallery2').css({"animationName":"vidcont"});
+    }
+    if(pos > 1100){
+        $('.gallery3').css({"animationName":"vidcont"});
+    }
+    if(pos > 1400){
+        $('.gallery4').css({"animationName":"vidcont"});
+    }
 }
 function changejc2(event){
-    this.querySelectorAll('.desc1').forEach(desc1 => {
-        let pos = pageYOffset;
-        desc1.style.opacity = `${pos*pos/1500}%`
-    });
-    this.querySelectorAll('.desc2').forEach(desc2 => {
-        let pos = pageYOffset;
-        desc2.style.opacity = `${pos*pos/5000}%`
-    });
-    this.querySelectorAll('.desc3').forEach(desc3 => {
-        let pos = pageYOffset;
-        desc3.style.opacity = `${pos*0.4*pos/7000}%`
-    });
-    this.querySelectorAll('.desc4').forEach(desc4 => {
-        let pos = pageYOffset;
-        desc4.style.opacity = `${pos*0.3*pos/9000}%`
-    });
+    let pos = pageYOffset;
+    if(pos > 120){
+        $('.desc11').css({"animationName":"vidcont2"});
+        $('.desc11').css({"zIndex":"200"});
+   }
+   if(pos > 300){
+       $('.desc2').css({"animationName":"vidcont2"});
+   }
+   if(pos > 1100){
+       $('.desc3').css({"animationName":"vidcont2"});
+   }
+   if(pos > 1400){
+       $('.desc4').css({"animationName":"vidcont2"});
+   }
 }
 document.addEventListener('scroll', changejc);
 document.addEventListener('scroll', changejc2);
@@ -127,6 +109,14 @@ vid3.addEventListener('mouseleave', function() {
     vid3.pause();
 });
 }
+
+
+
+
+
+
+
+
 if(document.documentElement.clientWidth < 600) {
     function parallax(event){
         this.querySelectorAll('.layer').forEach(layer => {
@@ -139,7 +129,6 @@ if(document.documentElement.clientWidth < 600) {
     }
     $(".galleryContainer > div").on('click', function(d) {
         curSlide = d.target;
-        
         iPicture = $(curSlide).css("backgroundImage");
         iPicture = iPicture.split("(");
         var iP = iPicture[1];
@@ -181,52 +170,40 @@ if(document.documentElement.clientWidth < 600) {
     
     var el = document.getElementById('Arrow');
     function changejc(event){
-        this.querySelectorAll('.galleryContainer').forEach(galleryContainer => {
-            let pos = pageYOffset;
-            galleryContainer.style.width = `${pos*pos/100}%`
-            galleryContainer.style.opacity = `${pos}%`
-        });
-        this.querySelectorAll('.Arrow').forEach(Arrow => {
-            
-           Arrow.style.display = `none`
-        });
-        this.querySelectorAll('.gallery2').forEach(gallery2 => {
-            let pos = pageYOffset;
-            gallery2.style.width = `${pos*pos/200}%`
-            gallery2.style.opacity = `${pos/2}%`
-        });
-        this.querySelectorAll('.vidgallery').forEach(gallery => {
-            let pos = pageYOffset;
-            gallery.style.opacity = `${pos/6}%`
-        });
-        this.querySelectorAll('.gallery3').forEach(gallery3 => {
-            let pos = pageYOffset;
-            gallery3.style.width = `${pos*0.25*pos/800}%`
-            gallery3.style.opacity = `${pos/6}%`
-        });
-        this.querySelectorAll('.gallery4').forEach(gallery4 => {
-            let pos = pageYOffset;
-            gallery4.style.width = `${pos*0.22*pos/1220}%`
-            gallery4.style.opacity = `${pos/8}%`
-        });
+        let pos = pageYOffset;
+    
+        if(pos > 50){
+             $('.gallery1').css({"animationName":"vidcont"});
+             $('.gallery1').css({"animationDuration":"1.2s"});
+        }
+        if(pos > 80){
+            $('.gallery2').css({"animationName":"vidcont"});
+            $('.gallery2').css({"animationDuration":"1.2s"});
+        }
+        if(pos > 400){
+            $('.gallery3').css({"animationName":"vidcont"});
+            $('.gallery3').css({"animationDuration":"1.2s"});
+        }
+        if(pos > 430){
+            $('.gallery4').css({"animationName":"vidcont"});
+            $('.gallery4').css({"animationDuration":"1.2s"});
+        }
     }
     function changejc2(event){
-        this.querySelectorAll('.desc1').forEach(desc1 => {
-            let pos = pageYOffset;
-            desc1.style.opacity = `${pos*pos/400}%`
-        });
-        this.querySelectorAll('.desc2').forEach(desc2 => {
-            let pos = pageYOffset;
-            desc2.style.opacity = `${pos*pos/600}%`
-        });
-        this.querySelectorAll('.desc3').forEach(desc3 => {
-            let pos = pageYOffset;
-            desc3.style.opacity = `${pos*0.4*pos/1000}%`
-        });
-        this.querySelectorAll('.desc4').forEach(desc4 => {
-            let pos = pageYOffset;
-            desc4.style.opacity = `${pos*0.3*pos/1100}%`
-        });
+        let pos = pageYOffset;
+        if(pos > 50){
+            $('.desc11').css({"animationName":"vidcont2"});
+            $('.desc11').css({"zIndex":"200"});
+       }
+       if(pos > 80){
+           $('.desc2').css({"animationName":"vidcont2"});
+       }
+       if(pos > 500){
+           $('.desc3').css({"animationName":"vidcont2"});
+       }
+       if(pos > 530){
+           $('.desc4').css({"animationName":"vidcont2"});
+       }
     }
     document.addEventListener('scroll', changejc);
     document.addEventListener('scroll', changejc2);
